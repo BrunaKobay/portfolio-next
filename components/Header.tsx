@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { MdClose, MdOutlineMail, MdOutlineMenu } from "react-icons/md";
@@ -15,7 +16,7 @@ export default function Header({}: Props) {
     <header className="fixed w-full top-0 p-5 z-20 bg-white">
       <div className="max-w-7xl flex items-center justify-between mx-auto">
         <div>
-          <h1 className="text-2xl font-serif">BK</h1>
+          <Image src="/bk.svg" width={80} height={80} alt="bruna logo" />
         </div>
         <div className="flex">
           <ul className="hidden sm:inline-flex items-center justify-between space-x-10 font-medium text-gray-700">
@@ -24,14 +25,15 @@ export default function Header({}: Props) {
                 home
               </li>
             </Link>
+
+            <Link href="#about">
+              <li className="hover:underline hover:decoration-2 hover:decoration-wavy hover:decoration-violet-600 hover:underline-offset-4 cursor-pointer">
+                about
+              </li>
+            </Link>
             <Link href="/#projects">
               <li className="hover:underline hover:decoration-2 hover:decoration-wavy hover:decoration-violet-600 hover:underline-offset-4 cursor-pointer">
                 projects
-              </li>
-            </Link>
-            <Link href="#skills">
-              <li className="hover:underline hover:decoration-2 hover:decoration-wavy hover:decoration-violet-600 hover:underline-offset-4 cursor-pointer">
-                skills
               </li>
             </Link>
           </ul>
@@ -75,20 +77,20 @@ export default function Header({}: Props) {
                       home
                     </li>
                   </Link>
+                  <Link href="#about">
+                    <li
+                      onClick={() => setNav(false)}
+                      className="hover:underline hover:decoration-2 hover:decoration-wavy hover:decoration-violet-600 hover:underline-offset-4 cursor-pointer"
+                    >
+                      about
+                    </li>
+                  </Link>
                   <Link href="#projects">
                     <li
                       onClick={() => setNav(false)}
                       className="hover:underline hover:decoration-2 hover:decoration-wavy hover:decoration-violet-600 hover:underline-offset-4 cursor-pointer"
                     >
                       projects
-                    </li>
-                  </Link>
-                  <Link href="#skills">
-                    <li
-                      onClick={() => setNav(false)}
-                      className="hover:underline hover:decoration-2 hover:decoration-wavy hover:decoration-violet-600 hover:underline-offset-4 cursor-pointer"
-                    >
-                      skills
                     </li>
                   </Link>
                   <Link href="#contact">

@@ -11,7 +11,7 @@ export default function Hero({}: Props) {
   const [text] = useTypewriter({
     words: [
       "Hi, I'm Bruna",
-      "A Fullstack Web Developer",
+      "A Front-end Developer",
       "Girl-that-loves-coffee.tsx",
       "</>",
     ],
@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
     delaySpeed: 2000,
   });
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center text-center overflow-hidden z-0">
+    <div className="h-[979px] flex flex-col items-center justify-center text-center overflow-hidden z-0">
       <BackgroundCircles />
       <GiCat size={100} className="mb-6" />
       <div className="flex flex-col items-center justify-center z-10">
@@ -28,7 +28,7 @@ export default function Hero({}: Props) {
           <Cursor cursorColor="purple" />
         </h1>
         <p className="pt-12 text-gray-500 max-w-[80%] md:max-w-[60%] lg:max-w-[40%] text-lg">
-          I'm a fullstack developer specializing in building exceptional digital
+          I'm a front-end developer specializing in building exceptional digital
           experiences. Currently, I'm focused on building responsive front-end
           web applications while learning back-end technologies.
         </p>
