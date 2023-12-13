@@ -53,6 +53,44 @@ export default function ({}: Props) {
         </div>
 
         <div className="flex flex-col justify-between items-center rounded-lg bg-white border border-gray-200 shadow-md  hover:-translate-y-4 transition ease-in-out duration-150 z-10 w-96 h-[476px]">
+          <img
+            src="/restaurant.png"
+            className="rounded-t-lg h-48 w-96"
+            alt="restaurant website project"
+          />
+          <div className="p-5 text-center space-y-4">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">
+              Study Case: Restaurant Page
+            </h5>
+            <p className="mb-3 font-normal text-gray-600 text-justify pb-4">
+              The key to fine dinning! Fully responsive modern UI/UX website in
+              React JS for a Restaurant Landing Page.
+            </p>
+
+            <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">
+              React JS
+            </span>
+          </div>
+          <div className="flex flex-row align-center space-x-8 p-2">
+            <a
+              href="https://github.com/BrunaKobay/restaurant-project"
+              target="_blank"
+            >
+              <button className="flex items-center space-x-1 px-4 py-1 rounded-lg text-white text-center font-medium bg-purple-500 hover:bg-purple-700">
+                <FaGithubAlt className="font-extrabold text-xl" />
+                <span className="pb-0.5 pl-1">github</span>
+              </button>
+            </a>
+            <a href="https://restaurant-project-bay.vercel.app" target="_blank">
+              <button className="flex items-center space-x-1 px-4 py-1 rounded-lg text-white text-center font-medium bg-purple-500 hover:bg-purple-700">
+                <FiExternalLink className="font-extrabold text-xl" />
+                <span className="pb-0.5 pl-1">view site</span>
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-between items-center rounded-lg bg-white border border-gray-200 shadow-md  hover:-translate-y-4 transition ease-in-out duration-150 z-10 w-96 h-[476px]">
           <div>
             <img
               src="/portfolio.png"
@@ -134,38 +172,6 @@ export default function ({}: Props) {
                 <span className="pb-0.5 pl-1">view site</span>
               </button>
             </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col justify-between items-center rounded-lg bg-white border border-gray-200 shadow-md  hover:-translate-y-4 transition ease-in-out duration-150 z-10 w-96 h-[476px]">
-          <img
-            src="/velt-logo.png"
-            className="rounded-t-lg h-48 w-96"
-            alt="velt logo"
-          />
-          <div className="p-5 text-center space-y-4">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700">
-              Project: Velt.
-            </h5>
-            <p className="mb-3 font-normal text-gray-600 text-justify pb-4">
-              Managing people in organizations is not an easy task. The Velt
-              platform was developed with the purpose of simplifying this
-              responsibility in organizations.
-            </p>
-            <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">
-              Nextjs
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">
-              Tailwind CSS
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded ml-3">
-              Firebase
-            </span>
-          </div>
-          <div className="flex flex-row align-center space-x-8 p-2">
-            <button className="flex items-center space-x-1 px-4 py-1 rounded-lg text-gray-600 text-center font-medium border border-purple-500 bg-white ">
-              <span className="pb-0.5 pl-1">in progress</span>
-            </button>
           </div>
         </div>
       </div>
